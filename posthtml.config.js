@@ -1,3 +1,5 @@
+const locals = require('./data/data.json');
+
 module.exports = {
   "plugins": {
     "posthtml-img-autosize": { root: 'src/assets/img' },
@@ -7,7 +9,12 @@ module.exports = {
       root: 'src/partials' // Path to parent template directory (default: './')
     },
     "posthtml-expressions":{
-      locals: { statement: '<strong>bar</strong>' }
+      locals: {
+        statement: '<strong>bar</strong>',
+        items: ['foo', 'bar'],
+        itemsObj: { foo: 'bar' },
+        ...locals
+      }
     },
     "posthtml-lorem":{}
   }
