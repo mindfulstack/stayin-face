@@ -1,5 +1,30 @@
 /* purgecss start ignore */
 @tailwind base;
+
+@font-face {
+    font-family: Rubik Black;
+    font-weight: 400;
+    src: url(/assets/fonts/rubik/Rubik-Black.ttf) format("ttf");
+}
+
+html {
+    /* @apply font-body */
+}
+
+/* h1 {
+    @apply text-2xl;
+}
+h2 {
+    @apply text-xl;
+}
+h3 {
+    @apply text-lg;
+} */
+a {
+    @apply text-blue-600 underline;
+}
+
+
 @tailwind components;
 /* purgecss end ignore */
 
