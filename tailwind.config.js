@@ -4,7 +4,13 @@ module.exports = {
       body: ['Rubik Black', 'sans-serif'],
       display: ['Lato', 'sans-serif']
     },
-    extend: {}
+    extend: {
+        // spacing: {
+        //  '72': '18rem',
+        //  '84': '21rem',
+        //  '96': '24rem',
+        // }
+    }
   },
   variants: {},
   plugins: [

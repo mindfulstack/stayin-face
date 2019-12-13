@@ -13,5 +13,12 @@
     <!-- <include src="partials/footer.html"></include> -->
     <!-- <include src="./partials/card.html"></include> -->
 
+    <ul>
+    <each loop="item, index in users">
+       <li>
+            <include src="./partials/card.html"></include>
+       </li>
+    </each>
+    </ul>
 </body>
 </html>
