@@ -1,5 +1,18 @@
 <section class="container mx-auto">
-    <div class="stay-grid">
-
+    <div class="heading mt-6 mb-4 pl-4 pr-4 md:pl-0 md:pr-0">
+        <h2 class="font-bold text-2xl tracking-tight">Places to stay around the world</h2>
+        <h6>Book one of these unique spots to escape the ordinary</h6>
+        <hr class="mt-4 text-green-500 bg-green-500 font-hairline">
     </div>
+    <ul class="stay-grid flex content-start flex-wrap -mx-2">
+    <each loop="item, index in users">
+        <li class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 px-2 py-2">
+            <include src="./partials/card.html"></include>
+        </li>
+    </each>
+    </ul>
+    <a class="inline-flex no-underline text-green-400 border-2 border-green-200 bg-green-100 font-medium px-4 py-2 rounded-lg">
+            <!-- <svg class="fill-current inline-block h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/></svg> -->
+            <span>View All (220+) &rarr;</span>
+    </a>
 </section>

@@ -1,15 +1,29 @@
-<header class="">
-    <nav class="flex container mx-auto px-4 py-4">
+<header class="h-screen relative overflow-hidden bg-local bg-cover bg-center bg-green-800" style="background-image: url(https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);background-blend-mode: soft-light;">
+    <nav class="flex container mx-auto px-4 py-4 z-10">
         <h1 class="flex-1 text-4xl">Staey</h1>
         <div class="flex-1 text-right">
             <ul class="inline-flex pt-4">
                 <li class="mr-4">
-                    <a class="no-underline px-2 py-2 bg-orange-200 text-red-600 rounded-b-lg rounded-t-lg cursor-pointer">
+                    <a class="no-underline px-4 py-2 bg-green-300 text-green-800 font-semibold rounded cursor-pointer">
                         Become a Host
                     </a>
                 </li>
-                <li class="mr-4"><a>Sign In</a> / <a>Sign Up</a></li>
+                <li class="mr-4 text-green-800">
+                    <a class="text-green-300 font-semibold no-underline">Sign In</a> <span class="text-green-300 font-thin no-underline">/</span> <a class="text-green-300 font-semibold no-underline">Sign Up</a></li>
             </ul>
         </div>
     </nav>
+    <article class="flex container mx-auto mt-64 z-10">
+        <div class="px-4 py-4 sm:w-full md:w-1/2 align">
+            <h1 class="text-5xl font-extrabold text-green-100">Find the best places to stay while travelling</h1>
+            <div class="flex mt-4">
+                <input class="placeholder-green-300 font-light outline-none border-0 px-4 py-4 w-full text-gray-800 tracking-wides text-2xl rounded-l-lg" type="text" value="" placeholder="Where do you wanna go?"></input>
+                <button class="inline-flex bg-green-500 px-4 py-2 text-2xl rounded-r-lg font-light text-white">
+                    <svg class="fill-current inline-block h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/></svg>
+                    <!-- <span>Search</span> -->
+                </button>
+            </div>
+            </form>
+        </div>
+    </article>
 </header>
